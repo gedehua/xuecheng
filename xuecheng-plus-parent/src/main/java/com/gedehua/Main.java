@@ -1,2 +1,7 @@
-package com.gedehua;public class Main {
+package com.gedehua;
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("1");
+    }
 }
