@@ -9,5 +9,9 @@
         <module name="xuecheng-plus-parent" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="xuecheng-plus" target="17" />
+      <module name="xuecheng-plus-parent" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
