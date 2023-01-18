@@ -10,11 +10,13 @@
     <name>xuecheng-plus</name>
     <modules>
         <module>../xuecheng-plus-base</module>
+        <module>../xuecheng-plus-generator</module>
+        <module>../xuecheng-plus-content</module>
     </modules>
     <packaging>pom</packaging>
     <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring-boot.version>2.3.7.RELEASE</spring-boot.version>
