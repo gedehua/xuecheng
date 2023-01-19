@@ -2,6 +2,8 @@ package com.gedehua.content.api;
 
 import com.gedehua.base.model.PageParams;
 import com.gedehua.base.model.PageResult;
+import com.gedehua.content.model.dto.AddCourseDto;
+import com.gedehua.content.model.dto.CourseBaseInfoDto;
 import com.gedehua.content.model.dto.QueryCourseParamsDto;
 import com.gedehua.content.model.po.CourseBase;
 
@@ -31,5 +33,10 @@ public class CourseBaseInfoController {
     public PageResult<CourseBase> list(PageParams pageParams, @RequestBody QueryCourseParamsDto queryCourseParams){
         return courseBaseInfoService.queryCourseBaseList(pageParams,queryCourseParams);
     }
-
+    @ApiOperation("新增课程基础信息")
+    @PostMapping("/course")
+    public CourseBaseInfoDto createCourseBase(@RequestBody AddCourseDto addCourseDto){
+        Long companyId = 22L;
+        return courseBaseInfoService.createCourseBase(companyId, addCourseDto);
+    }
 }

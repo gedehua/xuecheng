@@ -2,6 +2,8 @@ package com.gedehua.content.service;
 
 import com.gedehua.base.model.PageParams;
 import com.gedehua.base.model.PageResult;
+import com.gedehua.content.model.dto.AddCourseDto;
+import com.gedehua.content.model.dto.CourseBaseInfoDto;
 import com.gedehua.content.model.dto.QueryCourseParamsDto;
 import com.gedehua.content.model.po.CourseBase;
 
@@ -24,5 +26,13 @@ public interface CourseBaseInfoService  {
  */
   public PageResult<CourseBase> queryCourseBaseList(PageParams params, QueryCourseParamsDto queryCourseParamsDto);
 
-
+ /**
+  * @description 添加课程基本信息
+  * @param companyId  教学机构id
+  * @param addCourseDto  课程基本信息
+  * @return com.xuecheng.content.model.dto.CourseBaseInfoDto
+  * @author Mr.M
+  * @date 2022/9/7 17:51
+  */
+ CourseBaseInfoDto createCourseBase(Long companyId, AddCourseDto addCourseDto);
 }
