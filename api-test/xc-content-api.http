@@ -1,0 +1,46 @@
+# curl -X POST "http://localhost:63040/content/course/list?pageNo=1&pageSize=5" -H "accept: */*" -H "Content-Type: application/json" -d "{ \"auditStatus\": \"\", \"courseName\": \"\", \"publishStatus\": \"\"}"
+### 课程查询
+POST {{content_host}}/content/course/list?pageNo=1&pageSize=5
+accept: */*
+Content-Type: application/json
+
+{
+  "auditStatus": "",
+  "courseName": "",
+  "publishStatus": ""
+}
+
+### 课程分类查询
+# curl -X GET "http://localhost:63040/content/course-category/tree-nodes" -H "accept: */*"
+GET {{content_host}}/content/course-category/tree-nodes
+accept: */*
+
+### 提交课程
+# curl -X POST "http://localhost:63040/content/course" -H "accept: */*" -H "Content-Type: application/json" -d "{ \"charge\": \"string\", \"description\": \"string\", \"grade\": \"string\", \"mt\": \"string\", \"name\": \"string\", \"originalPrice\": 0, \"phone\": \"string\", \"pic\": \"string\", \"price\": 0, \"qq\": \"string\", \"st\": \"string\", \"tags\": \"string\", \"teachmode\": \"string\", \"users\": \"string\", \"validDays\": 0, \"wechat\": \"string\"}"
+POST {{content_host}}/content/course
+accept: */*
+Content-Type: application/json
+
+{
+  "charge": "201000",
+  "description": "测试描述",
+  "grade": "204001",
+  "mt": "1-1",
+  "name": "",
+  "originalPrice": 199,
+  "phone": "17892456421",
+  "pic": "",
+  "price": 129,
+  "qq": "1656995085",
+  "st": "1-1-1",
+  "tags": "学习",
+  "teachmode": "200002",
+  "users": "初级人员",
+  "validDays": 365,
+  "wechat": "17786669470"
+}
+
+###
+
+
+
